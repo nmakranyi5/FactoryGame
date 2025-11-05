@@ -16,6 +16,8 @@ public class ChangeShape : MonoBehaviour
             Resources.GetBuiltinResource<Mesh>("Sphere.fbx"),
             Resources.GetBuiltinResource<Mesh>("Capsule.fbx"),
             Resources.GetBuiltinResource<Mesh>("Cylinder.fbx"),
+            Resources.GetBuiltinResource<Mesh>("Plane.fbx"),
+            Resources.GetBuiltinResource<Mesh>("Quad.fbx"),
         };
 
         meshFilter.mesh = shapeMeshes[currentIndex];
@@ -34,4 +36,6 @@ public class ChangeShape : MonoBehaviour
             meshFilter.mesh = shapeMeshes[currentIndex];
         }
     }
+
+    public int GetCurrentIndex() => currentIndex;
 }

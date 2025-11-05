@@ -3,7 +3,7 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
     public TextMesh timerText;
-    public float startTime = 5f;
+    public float startTime = 3f;
 
     private float timeRemaining;
     private bool isRunning = true;
@@ -33,4 +33,13 @@ public class Timer : MonoBehaviour
     {
         timerText.text = "Time: " + timeRemaining.ToString("F2") + "s";
     }
+
+    public bool IsRunning() => isRunning;
+
+    public void ResetTimer()
+    {
+        timeRemaining = startTime;
+        isRunning = true;
+    }
+
 }
