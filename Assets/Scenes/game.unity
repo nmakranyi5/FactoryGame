@@ -703,7 +703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Timer
   timerText: {fileID: 802826411}
-  startTime: 3
+  startTime: 5
 --- !u!1 &1049398716
 GameObject:
   m_ObjectHideFlags: 0
