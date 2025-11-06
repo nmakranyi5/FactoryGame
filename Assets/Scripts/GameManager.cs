@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
     public Timer timerController;
     public TextMesh targetText;
 
-    private string[] shapeNames = { "Cube", "Sphere", "Capsule", "Cylinder", "Plane", "Quad" };
+    private string[] shapeNames = { "Cube", "Sphere", "Capsule", "Cylinder", "Plane" };
     private int targetIndex = 0;
     private bool gameOver = false;
 
